@@ -1,24 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Bold.ttf">
+            <string>Tajawal-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Vc Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="vcLogin" customModule="WhatsAppClone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwB-Vn-nsO">
+                                <rect key="frame" x="153" y="74" width="108" height="30"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="tnh-Ll-PpJ">
+                                <rect key="frame" x="93" y="792" width="228.5" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have an Account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpI-Pi-cEy">
+                                        <rect key="frame" x="0.0" y="0.0" width="153.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZr-OK-EAs">
+                                        <rect key="frame" x="168.5" y="0.0" width="60" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="LYr-nn-xqx"/>
+                                            <constraint firstAttribute="width" constant="60" id="Mxy-Py-Ga4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17"/>
+                                        <state key="normal" title="Login"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Xdk-x9-P0s">
+                                <rect key="frame" x="20" y="124" width="374" height="385"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAU-h4-jaL">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="KNe-ia-jfV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V5i-yN-8cQ">
+                                        <rect key="frame" x="0.0" y="41" width="374" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="vjy-da-8uV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9u1-Yb-74r">
+                                        <rect key="frame" x="0.0" y="91" width="374" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="ZRE-tF-gYu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nKR-M5-YVM">
+                                        <rect key="frame" x="0.0" y="132" width="374" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="LGv-gg-iri"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7eJ-jX-IaE">
+                                        <rect key="frame" x="0.0" y="182" width="374" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="4RG-44-UqU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xSE-3I-I3M">
+                                        <rect key="frame" x="0.0" y="223" width="374" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="qum-wu-655"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="130" translatesAutoresizingMaskIntoConstraints="NO" id="8z4-4J-Xrt">
+                                        <rect key="frame" x="0.0" y="273" width="374" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4B-de-fNI">
+                                                <rect key="frame" x="0.0" y="0.0" width="139" height="30"/>
+                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17"/>
+                                                <state key="normal" title="Forget Password?"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8n-9c-8T6">
+                                                <rect key="frame" x="269" y="0.0" width="105" height="30"/>
+                                                <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="17"/>
+                                                <state key="normal" title="Resend Email?"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="FUx-tt-eCJ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmR-dq-Tgr">
+                                        <rect key="frame" x="0.0" y="319" width="374" height="20"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="u1a-Pi-W9L"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtL-WU-dfP">
+                                        <rect key="frame" x="0.0" y="355" width="374" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.60392156860000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="wCC-CF-ytL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Tajawal-Bold" family="Tajawal" pointSize="20"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nKR-M5-YVM" secondAttribute="trailing" id="0fi-cg-dfm"/>
+                                    <constraint firstAttribute="trailing" secondItem="9u1-Yb-74r" secondAttribute="trailing" id="0wn-ok-8hY"/>
+                                    <constraint firstAttribute="trailing" secondItem="7eJ-jX-IaE" secondAttribute="trailing" id="2C8-Dn-ogw"/>
+                                    <constraint firstItem="xSE-3I-I3M" firstAttribute="leading" secondItem="Xdk-x9-P0s" secondAttribute="leading" id="Bhb-Xv-gIe"/>
+                                    <constraint firstItem="nKR-M5-YVM" firstAttribute="leading" secondItem="Xdk-x9-P0s" secondAttribute="leading" id="EdI-Ws-BDD"/>
+                                    <constraint firstAttribute="trailing" secondItem="V5i-yN-8cQ" secondAttribute="trailing" id="HbD-py-dHX"/>
+                                    <constraint firstAttribute="trailing" secondItem="8z4-4J-Xrt" secondAttribute="trailing" id="REf-5G-t5I"/>
+                                    <constraint firstItem="8z4-4J-Xrt" firstAttribute="leading" secondItem="Xdk-x9-P0s" secondAttribute="leading" id="Tta-rh-Rwo"/>
+                                    <constraint firstItem="V5i-yN-8cQ" firstAttribute="leading" secondItem="Xdk-x9-P0s" secondAttribute="leading" id="WVb-Ly-EpT"/>
+                                    <constraint firstItem="8z4-4J-Xrt" firstAttribute="leading" secondItem="Xdk-x9-P0s" secondAttribute="leading" id="XL3-2Y-IFk"/>
+                                    <constraint firstAttribute="trailing" secondItem="AAU-h4-jaL" secondAttribute="trailing" id="ZON-pH-xSX"/>
+                                    <constraint firstItem="AAU-h4-jaL" firstAttribute="leading" secondItem="Xdk-x9-P0s" secondAttribute="leading" id="a0p-Kf-lph"/>
+                                    <constraint firstAttribute="trailing" secondItem="8z4-4J-Xrt" secondAttribute="trailing" id="ffY-6e-PfK"/>
+                                    <constraint firstAttribute="trailing" secondItem="xSE-3I-I3M" secondAttribute="trailing" id="i0M-bI-AqO"/>
+                                    <constraint firstItem="9u1-Yb-74r" firstAttribute="leading" secondItem="Xdk-x9-P0s" secondAttribute="leading" id="nzZ-MK-LM8"/>
+                                    <constraint firstItem="8z4-4J-Xrt" firstAttribute="top" secondItem="xSE-3I-I3M" secondAttribute="bottom" constant="16" id="ohE-D4-92o"/>
+                                    <constraint firstItem="BtL-WU-dfP" firstAttribute="centerX" secondItem="Xdk-x9-P0s" secondAttribute="centerX" id="pNb-la-ciD"/>
+                                    <constraint firstItem="7eJ-jX-IaE" firstAttribute="leading" secondItem="Xdk-x9-P0s" secondAttribute="leading" id="vgA-ZM-jII"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Xdk-x9-P0s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="GMU-4q-OLc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tnh-Ll-PpJ" secondAttribute="bottom" constant="40" id="OCd-q5-Pxf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xdk-x9-P0s" secondAttribute="trailing" constant="20" id="Zw5-KM-3rO"/>
+                            <constraint firstItem="DwB-Vn-nsO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="arL-Jx-DId"/>
+                            <constraint firstItem="tnh-Ll-PpJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ctU-zy-o3y"/>
+                            <constraint firstItem="DwB-Vn-nsO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="pJd-dw-vbb"/>
+                            <constraint firstItem="Xdk-x9-P0s" firstAttribute="top" secondItem="DwB-Vn-nsO" secondAttribute="bottom" constant="20" id="sTE-VO-4Aa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="258" y="7"/>
         </scene>
     </scenes>
 </document>
